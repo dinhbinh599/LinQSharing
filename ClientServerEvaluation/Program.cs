@@ -7,10 +7,7 @@ namespace ClientServerEvaluation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            SchoolDbContext db = new SchoolDbContext();
-            var davidName = db.Students.Where(x => x.FirstName == "David").FirstOrDefault();
-            Console.WriteLine(davidName?.FirstName);
+            MyMethods.UnsupportedClientEvaluation();
         }
     }
 }
