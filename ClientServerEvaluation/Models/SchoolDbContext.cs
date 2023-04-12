@@ -39,6 +39,7 @@ public partial class SchoolDbContext : DbContext
             entity.Property(e => e.FirstName).HasMaxLength(50);
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.LastName).HasMaxLength(50);
+            entity.Property(e => e.Grade);
         });
 
         OnModelCreatingPartial(modelBuilder);
